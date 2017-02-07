@@ -2,7 +2,7 @@
 title: "Aside Boxes"
 ---
 
-This document shows how to use the `<aside>` tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a "custom" option:
+This page shows how to use the `<aside>` tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a "custom" option:
 
 | Css Class | Resulting Label |
 |-----------|-----------------|
