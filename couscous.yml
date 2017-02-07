@@ -1,0 +1,21 @@
+template:
+    # url: https://github.com/LaunchCodeEducation/Template-Light
+    directory: ../Template-Light
+
+# Base URL of the published website
+baseUrl: http://education.launchcode.org/internal-docs
+
+# Used to link to the GitHub project
+github:
+    user: LaunchCodeEducation
+    repo: internal-docs
+
+metaTitle: LC Edu
+siteTitle: 'Internal Docs'
+
+# The left menu bar
+menu:
+    items:
+        aside-boxes:
+            text: Aside Boxes
+            relativeUrl: aside-boxes/
