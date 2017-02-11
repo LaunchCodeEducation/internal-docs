@@ -10,6 +10,7 @@ This page shows how to use the `<aside>` tag within your markdown to generate li
 `.aside-warning` | ⚠️ Warning
 `.aside-hint` | 🤔 Hint
 `.aside-pro-tip` | 🎻 Pro Tip
+`.aside-example` | 🔦 Example
 `.aside-custom` | Whatever You Want
 
 ---
@@ -93,6 +94,24 @@ You can write that in one line using the *ternary* operator. Learn more [here](#
 </aside>
 ```
 
+### Example
+
+Use `aside-example` to give examples of concepts under discussion.
+
+<aside class="aside-example" markdown="1">
+The ternary operator in Javascript
+```js
+var value = inputVal != null ? inputVal : defaultVal;
+```
+</aside>
+
+Markdown source:
+
+```markdown
+<aside class="aside-example" markdown="1">
+You can write that in one line using the *ternary* operator. Learn more [here](#).
+</aside>
+```
 
 ### Custom
 
