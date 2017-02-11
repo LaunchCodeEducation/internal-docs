@@ -109,7 +109,10 @@ Markdown source:
 
 ```markdown
 <aside class="aside-example" markdown="1">
-You can write that in one line using the *ternary* operator. Learn more [here](#).
+The ternary operator in Javascript
+```js
+var value = inputVal != null ? inputVal : defaultVal;
+```
 </aside>
 ```
 
