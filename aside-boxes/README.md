@@ -107,14 +107,14 @@ var value = inputVal != null ? inputVal : defaultVal;
 
 Markdown source:
 
-```markdown
+~~~markdown
 <aside class="aside-example" markdown="1">
 The ternary operator in Javascript
 ```js
 var value = inputVal != null ? inputVal : defaultVal;
 ```
 </aside>
-```
+~~~
 
 ### Custom
 
