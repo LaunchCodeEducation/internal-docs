@@ -15,18 +15,38 @@
 
         <header class="navbar navbar-default navbar-fixed-top">
 
-            <a class="navbar-brand dabomb" href="http://education.launchcode.org/internal-docs/"></a>
+            <ul class="nav navbar-nav">
 
-            <a class="navbar-brand site-title" href="http://education.launchcode.org/internal-docs/">
-                <h1>Internal Docs</h1>
-            </a>
 
-            <ul class="nav navbar-nav navbar-right">
+
+                <li><a class="navbar-brand dabomb" href="http://education.launchcode.org/internal-docs/"></a></li>
                 <li>
-                    <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
-                      <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+                    <a class="navbar-brand site-title" href="http://education.launchcode.org/internal-docs/">
+                        <h1>Internal Docs</h1>
                     </a>
                 </li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                        <ul class="dropdown-menu">
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/internal-docs/aside-boxes/">
+                                        Aside Boxes
+                                    </a>
+                                </li>
+                                                        <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">Search This Site</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
             </ul>
 
         </header>
@@ -66,21 +86,7 @@
         <main class="container-fluid">
             <div class="row">
 
-                
-                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
-
-                        <ul class="nav nav-pills nav-stacked">
-                                                            <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/internal-docs/aside-boxes/">
-                                        Aside Boxes
-                                    </a>
-                                </li>
-                                                    </ul>
-
-                    </nav>
-
-                
-                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                <section id="content" class="col-sm-offset-2 col-sm-8">
                                         <h1>Aside Boxes</h1>
                     <p>This page shows how to use the <code>&lt;aside&gt;</code> tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a &quot;custom&quot; option:</p>
 <table>
@@ -106,6 +112,10 @@
 <tr>
 <td><code>.aside-pro-tip</code></td>
 <td>🎻 Pro Tip</td>
+</tr>
+<tr>
+<td><code>.aside-example</code></td>
+<td>🔦 Example</td>
 </tr>
 <tr>
 <td><code>.aside-custom</code></td>
@@ -158,6 +168,16 @@ You will probably need to build up the string as you go, using the [accumulator 
 </aside>
 <p>Markdown source:</p>
 <pre><code class="language-markdown">&lt;aside class="aside-pro-tip" markdown="1"&gt;
+You can write that in one line using the *ternary* operator. Learn more [here](#).
+&lt;/aside&gt;</code></pre>
+<h3 id="example">Example</h3>
+<p>Use <code>aside-example</code> to give examples of concepts under discussion.</p>
+<aside class="aside-example">
+<p>The ternary operator in Javascript</p>
+<pre><code class="language-js">var value = inputVal != null ? inputVal : defaultVal;</code></pre>
+</aside>
+<p>Markdown source:</p>
+<pre><code class="language-markdown">&lt;aside class="aside-example" markdown="1"&gt;
 You can write that in one line using the *ternary* operator. Learn more [here](#).
 &lt;/aside&gt;</code></pre>
 <h3 id="custom">Custom</h3>
