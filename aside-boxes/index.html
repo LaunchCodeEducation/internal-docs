@@ -180,21 +180,16 @@ You can write that in one line using the *ternary* operator. Learn more [here](#
 <pre><code class="language-markdown">&lt;aside class="aside-example" markdown="1"&gt;
 The ternary operator in Javascript
 ```js
-var value = inputVal != null ? inputVal : defaultVal;</code></pre>
-<p></aside></p>
-<pre><code>
-### Custom
-
-If there is some specific label you need, then you can use the `aside-custom` class and set the `label` attribute accordingly.
-
-&lt;aside class="aside-custom" label="Announcement" markdown="1"&gt;
-Party at Chris's place on Saturday!
-
-(BYO accident insurance)
-&lt;/aside&gt;
-
-```markdown
-&lt;aside class="aside-custom" label="Announcement" markdown="1"&gt;
+var value = inputVal != null ? inputVal : defaultVal;
+```
+&lt;/aside&gt;</code></pre>
+<h3 id="custom">Custom</h3>
+<p>If there is some specific label you need, then you can use the <code>aside-custom</code> class and set the <code>label</code> attribute accordingly.</p>
+<aside class="aside-custom" label="Announcement">
+<p>Party at Chris's place on Saturday!</p>
+<p>(BYO accident insurance)</p>
+</aside>
+<pre><code class="language-markdown">&lt;aside class="aside-custom" label="Announcement" markdown="1"&gt;
 Party at Chris's place on Saturday!
 
 (BYO accident insurance)
