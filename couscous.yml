@@ -19,3 +19,6 @@ menu:
         aside-boxes:
             text: Aside Boxes
             relativeUrl: aside-boxes/
+        libgif:
+            text: libgif
+            relativeUrl: libgif/

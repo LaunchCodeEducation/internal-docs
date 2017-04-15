@@ -1,5 +1,5 @@
 ---
-title: "LC Edu: Internal Docs"
+title: "LaunchCode Education Documentation"
 ---
 
 Guides and documentation for internal use.
