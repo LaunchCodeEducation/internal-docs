@@ -22,3 +22,6 @@ menu:
         libgif:
             text: libgif
             relativeUrl: libgif/
+        style-guide:
+            text: Style Guide
+            relativeUrl: style-guide/
