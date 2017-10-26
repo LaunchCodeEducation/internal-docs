@@ -10,18 +10,18 @@ github:
     user: LaunchCodeEducation
     repo: internal-docs
 
-metaTitle: LC Edu
+metaTitle: 
 siteTitle: 'Internal Docs'
 
 # The left menu bar
 menu:
     items:
+        style-guide:
+            text: Style Guide
+            relativeUrl: style-guide/
         aside-boxes:
             text: Aside Boxes
             relativeUrl: aside-boxes/
         libgif:
             text: libgif
             relativeUrl: libgif/
-        style-guide:
-            text: Style Guide
-            relativeUrl: style-guide/
