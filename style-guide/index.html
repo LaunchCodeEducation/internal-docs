@@ -22,6 +22,11 @@
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
                                                             <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/internal-docs/style-guide/">
+                                        Style Guide
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
                                     <a href="http://education.launchcode.org/internal-docs/aside-boxes/">
                                         Aside Boxes
                                     </a>
@@ -29,11 +34,6 @@
                                                             <li class=" lc-button">
                                     <a href="http://education.launchcode.org/internal-docs/libgif/">
                                         libgif
-                                    </a>
-                                </li>
-                                                            <li class=" lc-button">
-                                    <a href="http://education.launchcode.org/internal-docs/style-guide/">
-                                        Style Guide
                                     </a>
                                 </li>
                                                         <li role="separator" class="divider"></li>
@@ -108,9 +108,10 @@
 <blockquote>
 <p>Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.</p>
 </blockquote>
-<p><strong>Levels 3+</strong>: Capitalie only the first word.</p>
+<p><strong>Levels 3+</strong>: Capitalize only the first word.</p>
 <p><strong>Code snippets</strong>: Any words or characters that would otherwise be formatted using inline code formatting (e.g. backtics in markdown) should <em>not</em> have such formatting applied when part of a heading. Furthermore, the case of such words or characters should not be modified to match the capitalization rules above; they should remain the same case that they would be when used.</p>
 <h2 id="inline-code-formatting">Inline Code Formatting</h2>
+<p><em>Strict</em></p>
 <p>The following types of items should have inline code formatting applied (e.g. backtics in markdown, or <code>&lt;code&gt;</code> elements in HTML):</p>
 <ul>
 <li>Any literal piece of code, including all identifiers and operators</li>
@@ -120,10 +121,33 @@
 <p>One exception to this rule is when any of these elements appears in a heading. See the <a href="#headings">Headings</a> section for details.</p>
 </aside>
 <h2 id="application-and-ui-labels">Application and UI Labels</h2>
+<p><em>Moderate</em></p>
 <p>Format labels for applications menus and other UI components using italics.</p>
 <aside class="aside-example">
 <p>To open a file in Atom, use <em>File &gt; Open</em>.</p>
 </aside>
+<h2 id="code-segments">Code Segments</h2>
+<p><em>Strict</em></p>
+<h3 id="longblock-segments">Long/Block Segments</h3>
+<p>For code segments more than two or three words long, or for those that warrant calling the user's attention to, use triple-backtics along with the language in question:</p>
+<pre><code class="language-nohighlight">\`\`\`java
+public static int counter;
+\`\`\`</code></pre>
+<p>Some common language identifiers supported by Markdown and Couscous are: <code>java</code>, <code>python</code>, <code>csharp</code>, <code>html</code>, <code>css</code>, <code>js</code>, and <code>sql</code>.</p>
+<p>For terminal/shell commands, use <code>nohighlight</code> as the language identifier:</p>
+<pre><code class="language-nohighlight">\`\`\`nohighlight
+$ javac Hello.java
+\`\`\`</code></pre>
+<p>Also note that you should prepend shell commands displayed in block style with a generic prompt: <code>$</code>. Shell commands displayed inline (as below) should <em>not</em> be prepended with <code>$</code>.</p>
+<h3 id="short-segments">Short Segments</h3>
+<p>For short segments, or individual code words, encolose in single backtics: ```</p>
+<pre><code class="language-nohighlight">The \`static\` keyword in Java is used to...</code></pre>
+<p>You should always encolse the following types of types of items in single backtics:</p>
+<ul>
+<li>Programming language keywords, symbols, and identifiers</li>
+<li>File and directory names</li>
+<li>URLs</li>
+</ul>
                                     </section>
 
             </div>
