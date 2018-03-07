@@ -1,5 +1,2 @@
-https://education.launchcode.org/internal-docs/aside-boxes/index.html
-https://education.launchcode.org/internal-docs/index.html
-https://education.launchcode.org/internal-docs/libgif/index.html
-https://education.launchcode.org/internal-docs/style-guide/index.html
-https://education.launchcode.org/internal-docs/sitemap.html
+/index.html
+/sitemap.html
