@@ -7,14 +7,14 @@ This is a work-in-progress guide to writing and formatting content for LaunchCod
 We identify three levels of current implementation for each category:
 
 - *Strict*: Follow these guidelines at all times. If you find a violation of the guideline, fix it. Strict guidelines are generally widely-implemented.
-- *Moderate*: Implemntation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.
+- *Moderate*: Implementation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.
 - *Aspirational*: Guidelines we aspire to implement more regularly. These are generally less impactful to the student, but are good for standardizing and maintaining a high level of quality.
 
 ## Headings
 
 *Strict*
 
-**Levels 1-2**: Use sentence case (all major words of the headline capitalized). For the definition of "major word" we defer to AP style: 
+**Levels 1-2**: Use sentence case (all major words of the headline capitalized). For the definition of "major word" we defer to AP style:
 
 > Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.
 
@@ -43,7 +43,7 @@ Format labels for applications menus and other UI components using italics.
 
 <aside class="aside-example" markdown="1">
 To open a file in Atom, use *File > Open*.
-</aside> 
+</aside>
 
 ## Code Segments
 
@@ -73,13 +73,13 @@ Also note that you should prepend shell commands displayed in block style with a
 
 ### Short Segments
 
-For short segments, or individual code words, encolose in single backtics: `\``
+For short segments, or individual code words, enclose in single backtics: `\``
 
 ```nohighlight
 The \`static\` keyword in Java is used to...
 ```
 
-You should always encolse the following types of types of items in single backtics:
+You should always enclose the following types of types of items in single backtics:
 
 - Programming language keywords, symbols, and identifiers
 - File and directory names
