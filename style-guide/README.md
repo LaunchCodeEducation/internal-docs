@@ -6,7 +6,7 @@ This is a work-in-progress guide to writing and formatting content for LaunchCod
 
 We identify three levels of current implementation for each category:
 
-- *Strict*: Follow these guidelines at all times. If you find a violation of the guideline, fix it. Strict guidelines are generally widely-implemented.
+- *Strict*: Follow these guidelines at all times. If you find a violation of one of these guidelines, fix it. Strict guidelines are generally widely-implemented.
 - *Moderate*: Implementation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.
 - *Aspirational*: Guidelines we aspire to implement more regularly. These are generally less impactful to the student, but are good for standardizing and maintaining a high level of quality.
 
