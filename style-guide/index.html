@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>LaunchCode Education Documentation :: Internal Docs</title>
+        <title>Style Guide :: Internal Docs</title>
 
         <link rel="stylesheet" href="https://education.launchcode.org/internal-docs/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://education.launchcode.org/internal-docs/css/highlight.launchcode.css">
         <link rel="stylesheet" href="https://education.launchcode.org/internal-docs/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-launchcode-education-documentation'>
+    <body id='page-style-guide'>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -94,14 +94,60 @@
             <div class="row">
 
                 <section id="content" class="col-sm-offset-2 col-sm-8">
-                                        <h1>LaunchCode Education Documentation</h1>
-                    <p>Guides and documentation for internal use.</p>
-<h2 id="contents">Contents</h2>
-<ol>
-<li><a href="style-guide/">Style Guide</a></li>
-<li><a href="aside-boxes/">Aside Boxes</a></li>
-<li><a href="libgif/">libgif</a></li>
-</ol>
+                                        <h1>Style Guide</h1>
+                    <p>This is a work-in-progress guide to writing and formatting content for LaunchCode education programs.</p>
+<p>We identify three levels of current implementation for each category:</p>
+<ul>
+<li><em>Strict</em>: Follow these guidelines at all times. If you find a violation of the guideline, fix it. Strict guidelines are generally widely-implemented.</li>
+<li><em>Moderate</em>: Implementation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.</li>
+<li><em>Aspirational</em>: Guidelines we aspire to implement more regularly. These are generally less impactful to the student, but are good for standardizing and maintaining a high level of quality.</li>
+</ul>
+<h2 id="headings">Headings</h2>
+<p><em>Strict</em></p>
+<p><strong>Levels 1-2</strong>: Use sentence case (all major words of the headline capitalized). For the definition of &quot;major word&quot; we defer to AP style:</p>
+<blockquote>
+<p>Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.</p>
+</blockquote>
+<p><strong>Levels 3+</strong>: Capitalize only the first word.</p>
+<p><strong>Code snippets</strong>: Any words or characters that would otherwise be formatted using inline code formatting (e.g. backtics in markdown) should <em>not</em> have such formatting applied when part of a heading. Furthermore, the case of such words or characters should not be modified to match the capitalization rules above; they should remain the same case that they would be when used.</p>
+<h2 id="inline-code-formatting">Inline Code Formatting</h2>
+<p><em>Strict</em></p>
+<p>The following types of items should have inline code formatting applied (e.g. backtics in markdown, or <code>&lt;code&gt;</code> elements in HTML):</p>
+<ul>
+<li>Any literal piece of code, including all identifiers and operators</li>
+<li>File and directory names</li>
+</ul>
+<aside class="aside-note">
+<p>One exception to this rule is when any of these elements appears in a heading. See the <a href="#headings">Headings</a> section for details.</p>
+</aside>
+<h2 id="application-and-ui-labels">Application and UI Labels</h2>
+<p><em>Moderate</em></p>
+<p>Format labels for applications menus and other UI components using italics.</p>
+<aside class="aside-example">
+<p>To open a file in Atom, use <em>File &gt; Open</em>.</p>
+</aside>
+<h2 id="code-segments">Code Segments</h2>
+<p><em>Strict</em></p>
+<h3 id="longblock-segments">Long/Block Segments</h3>
+<p>For code segments more than two or three words long, or for those that warrant calling the user's attention to, use triple-backtics along with the language in question:</p>
+<pre><code class="language-nohighlight">\`\`\`java
+public static int counter;
+\`\`\`</code></pre>
+<p>Some common language identifiers supported by Markdown and Couscous are: <code>java</code>, <code>python</code>, <code>csharp</code>, <code>html</code>, <code>css</code>, <code>js</code>, and <code>sql</code>.</p>
+<p>For terminal/shell commands, use <code>nohighlight</code> as the language identifier:</p>
+<pre><code class="language-nohighlight">\`\`\`nohighlight
+$ javac Hello.java
+\`\`\`</code></pre>
+<p>Also note that you should prepend shell commands displayed in block style with a generic prompt: <code>$</code>. Shell commands displayed inline (as below) should <em>not</em> be prepended with <code>$</code>.</p>
+<h3 id="short-segments">Short Segments</h3>
+<p>For short segments, or individual code words, enclose in single backtics: ```</p>
+<pre><code class="language-nohighlight">The \`static\` keyword in Java is used to...</code></pre>
+<p>You should always enclose the following types of types of items in single backtics:</p>
+<ul>
+<li>Programming language keywords, symbols, and identifiers</li>
+<li>File and directory names</li>
+<li>URLs</li>
+</ul>
                                     </section>
 
             </div>
