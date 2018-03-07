@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>LaunchCode Education Documentation :: Internal Docs</title>
+        <title>Aside Boxes :: Internal Docs</title>
 
         <link rel="stylesheet" href="https://education.launchcode.org/internal-docs/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://education.launchcode.org/internal-docs/css/highlight.launchcode.css">
         <link rel="stylesheet" href="https://education.launchcode.org/internal-docs/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-launchcode-education-documentation'>
+    <body id='page-aside-boxes'>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -94,14 +94,113 @@
             <div class="row">
 
                 <section id="content" class="col-sm-offset-2 col-sm-8">
-                                        <h1>LaunchCode Education Documentation</h1>
-                    <p>Guides and documentation, provided for internal use.</p>
-<h2 id="contents">Contents</h2>
-<ol>
-<li><a href="style-guide/">Style Guide</a></li>
-<li><a href="aside-boxes/">Aside Boxes</a></li>
-<li><a href="libgif/">libgif</a></li>
-</ol>
+                                        <h1>Aside Boxes</h1>
+                    <p>This page shows how to use the <code>&lt;aside&gt;</code> tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a &quot;custom&quot; option:</p>
+<table>
+<thead>
+<tr>
+<th>Css Class</th>
+<th>Resulting Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.aside-note</code></td>
+<td>✶ Note</td>
+</tr>
+<tr>
+<td><code>.aside-warning</code></td>
+<td>⚠️ Warning</td>
+</tr>
+<tr>
+<td><code>.aside-hint</code></td>
+<td>🤔 Hint</td>
+</tr>
+<tr>
+<td><code>.aside-pro-tip</code></td>
+<td>🎻 Pro Tip</td>
+</tr>
+<tr>
+<td><code>.aside-example</code></td>
+<td>🔦 Example</td>
+</tr>
+<tr>
+<td><code>.aside-custom</code></td>
+<td>Whatever You Want</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="examples">Examples</h2>
+<h3 id="note">Note</h3>
+<p>Use <code>aside-note</code> when you want to acknowledge or call attention to something, but you don't want to break up the flow of your main thought(s). Finish the main flow of thought first, and then insert the note afterwards.</p>
+<aside class="aside-note">
+<p>If the image above fails to load, then <a href="#">click here to see Daisy's mock-up</a>.</p>
+</aside>
+<p>Markdown source:</p>
+<pre><code class="language-markdown">&lt;aside class="aside-note" markdown="1"&gt;
+If the image above fails to load, then [click here to see Daisy's mock-up](#).
+&lt;/aside&gt;</code></pre>
+<aside class="aside-note">
+<p>Notice the <code>markdown="1"</code> attribute. This allows us to write arbitrary markdown inside the <code>&lt;aside&gt;</code> tag.</p>
+<p>Yay!
+</aside></p>
+</aside>
+<h3 id="warning">Warning</h3>
+<p>Use <code>aside-warning</code> similarly to <code>aside-note</code>, but especially in situations where you want to prevent the reader from running into some trouble.</p>
+<aside class="aside-warning">
+<p>The <code>markdown="1"</code> attribute <strong>is required</strong>, even if you don't care about switching back to markdown.</p>
+<p>If you leave it off, the alignment of elements in your <code>&lt;aside&gt;</code> box will look crappy.
+</aside></p>
+</aside>
+<p>Markdown source:</p>
+<pre><code class="language-markdown">&lt;aside class="aside-warning" markdown="1"&gt;
+The `markdown="1"` attribute **is required**, even if you don't care about switching back to markdown.
+
+If you leave it off, the alignment of elements in your `&lt;aside&gt;` box will look crappy.
+&lt;/aside&gt;</code></pre>
+<h3 id="hint">Hint</h3>
+<p>Use <code>aside-hint</code> to give a hint about how the student might approach a problem.</p>
+<aside class="aside-hint">
+<p>You will probably need to build up the string as you go, using the <a href="#">accumulator pattern</a>.</p>
+</aside>
+<p>Markdown source:</p>
+<pre><code class="language-markdown">&lt;aside class="aside-hint" markdown="1"&gt;
+You will probably need to build up the string as you go, using the [accumulator pattern](#).
+&lt;/aside&gt;</code></pre>
+<h3 id="pro-tip">Pro Tip</h3>
+<p>Use <code>aside-pro-tip</code> to introduce concepts, skills, or cute tricks that are nice-to-have, but not fully necessary, and can be safely ignored without compromising the student's core understanding.</p>
+<aside class="aside-pro-tip">
+<p>You can write that in one line using the <em>ternary</em> operator. Learn more <a href="#">here</a>.</p>
+</aside>
+<p>Markdown source:</p>
+<pre><code class="language-markdown">&lt;aside class="aside-pro-tip" markdown="1"&gt;
+You can write that in one line using the *ternary* operator. Learn more [here](#).
+&lt;/aside&gt;</code></pre>
+<h3 id="example">Example</h3>
+<p>Use <code>aside-example</code> to give examples of concepts under discussion.</p>
+<aside class="aside-example">
+<p>The ternary operator in Javascript</p>
+<pre><code class="language-js">var value = inputVal != null ? inputVal : defaultVal;</code></pre>
+</aside>
+<p>Markdown source:</p>
+<pre><code class="language-markdown">&lt;aside class="aside-example" markdown="1"&gt;
+The ternary operator in Javascript
+```js
+var value = inputVal != null ? inputVal : defaultVal;
+```
+&lt;/aside&gt;</code></pre>
+<h3 id="custom">Custom</h3>
+<p>If there is some specific label you need, then you can use the <code>aside-custom</code> class and set the <code>label</code> attribute accordingly.</p>
+<aside class="aside-custom" label="Announcement">
+<p>Party at Chris's place on Saturday!</p>
+<p>(BYO accident insurance)</p>
+</aside>
+<pre><code class="language-markdown">&lt;aside class="aside-custom" label="Announcement" markdown="1"&gt;
+Party at Chris's place on Saturday!
+
+(BYO accident insurance)
+&lt;/aside&gt;</code></pre>
                                     </section>
 
             </div>
