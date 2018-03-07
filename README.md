@@ -2,7 +2,7 @@
 title: "LaunchCode Education Documentation"
 ---
 
-Guides and documentation for internal use.
+Guides and documentation, provided for internal use.
 
 ## Contents
 
