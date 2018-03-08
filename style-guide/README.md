@@ -76,7 +76,7 @@ Also note that you should prepend shell commands displayed in block style with a
 For short segments, or individual code words, enclose in single backtics: `\``
 
 ```nohighlight
-The \`static\` keyword in Java is used to...
+The `static` keyword in Java is used to...
 ```
 
 You should always enclose the following types of types of items in single backtics:
