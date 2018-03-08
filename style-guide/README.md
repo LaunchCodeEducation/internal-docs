@@ -54,9 +54,9 @@ To open a file in Atom, use *File > Open*.
 For code segments more than two or three words long, or for those that warrant calling the user's attention to, use triple-backtics along with the language in question:
 
 ```nohighlight
-\`\`\`java
+\```java
 public static int counter;
-\`\`\`
+\```
 ```
 
 Some common language identifiers supported by Markdown and Couscous are: `java`, `python`, `csharp`, `html`, `css`, `js`, and `sql`.
@@ -64,16 +64,16 @@ Some common language identifiers supported by Markdown and Couscous are: `java`,
 For terminal/shell commands, use `nohighlight` as the language identifier:
 
 ```nohighlight
-\`\`\`nohighlight
+\```nohighlight
 $ javac Hello.java
-\`\`\`
+\```
 ```
 
 Also note that you should prepend shell commands displayed in block style with a generic prompt: `$`. Shell commands displayed inline (as below) should _not_ be prepended with `$`.
 
 ### Short Segments
 
-For short segments, or individual code words, enclose in single backtics: `\``
+For short segments, or individual code words, enclose in single backtics: \` \`
 
 ```nohighlight
 The `static` keyword in Java is used to...
